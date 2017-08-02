@@ -31,7 +31,7 @@
         <p style="padding-top:30px;"><b>Messages</b></p><hr>
 
         <!--????-->
-
+@each('shared.comment',$comments, 'comment')
         <a href="#comment-form">leave a Message</a>
     </div>
 </div>

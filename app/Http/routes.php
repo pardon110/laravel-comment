@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    $comments = App\Comment::orderBy('created_at','desc')->paginate(20);
+    return view('home',compact('comments'));
 });
 
 //login
